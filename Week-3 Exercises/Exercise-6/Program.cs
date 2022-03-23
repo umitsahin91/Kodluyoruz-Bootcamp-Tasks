@@ -1,11 +1,15 @@
 ﻿using System;
 
-namespace Alıştırma_6
+namespace Exercise_6
 {
     class Program
     {
         static void Main(string[] args)
         {
+            /*
+            Verilen bir kişi adını bir dizide arayan ve bulunup bulunamadığını belirten
+            program. (Diziyi siz girebilirsiniz ya da kullanıcıdan alabilirsiniz.)
+            */
             Console.Write("Lütfen Kişi Sayısını Girin : ");
             int number = int.Parse(Console.ReadLine());
             List list = new List(number);
@@ -15,8 +19,8 @@ namespace Alıştırma_6
             bool check =list.Searching(searching);
             list.Checked(check);           
         }
-
-        class List
+    }
+      class List
         {
             string[] list;
             int number;
@@ -63,5 +67,6 @@ namespace Alıştırma_6
 
             }
         }
-    }
+
+
 }
